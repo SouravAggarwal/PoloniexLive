@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/ripple">
+
+    <TextView
+        android:id="@+id/nTextViewHeaer"
+        android:layout_width="259dp"
+        android:layout_height="25dp"
+        android:text="TextView"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/nImageView"
+        android:layout_marginLeft="8dp"
+        android:lines="1"
+        android:textSize="16sp"
+android:textStyle="bold"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/nImageView"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/nTextViewDesc"
+        android:layout_width="258dp"
+        android:textSize="14sp"
+        android:layout_height="45dp"
+        android:text="TextView"
+        android:layout_marginRight="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/nImageView"
+        android:layout_marginLeft="8dp"
+        android:ellipsize="end"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="0dp"
+        android:lines="2"
+        app:layout_constraintTop_toBottomOf="@+id/nTextViewHeaer"
+        app:layout_constraintBottom_toBottomOf="@+id/nImageView"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintVertical_bias="0.571"
+        tools:layout_editor_absoluteY="45dp"
+        tools:layout_editor_absoluteX="149dp" />
+
+    <ImageView
+        android:id="@+id/nImageView"
+        android:layout_width="78dp"
+        android:layout_height="93dp"
+         android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="355dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="95dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

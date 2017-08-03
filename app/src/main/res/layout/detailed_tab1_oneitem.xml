@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/dt1oneItemLayout">
+
+
+    <TextView
+        android:id="@+id/dt1oneItemPrice"
+        android:layout_width="110dp"
+        android:layout_height="21dp"
+
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="8dp"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:text="0.236258742" />
+
+
+    <TextView
+        android:id="@+id/dt1oneItemAmount"
+        android:layout_width="98dp"
+        android:layout_height="21dp"
+        android:textSize="15sp"
+
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dt1oneItemPrice"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:text="0.236258742"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/dt1oneItemPrice"
+        android:layout_marginLeft="16dp" />
+</android.support.constraint.ConstraintLayout>

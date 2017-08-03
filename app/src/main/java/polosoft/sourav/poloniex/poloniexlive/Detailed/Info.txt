@@ -1,0 +1,39 @@
+
+
+
+
+ String urlTab1="https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_NXT&depth=10";
+
+String urlTab2="https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_NXT";
+
+  String urlTab3="https://poloniex.com/public?command=returnChartData&currencyPair=BTC_XMR&start=1405699200&end=9999999999&period=14400
+
+
+
+  public void gettime(){
+   long utcNowMillis;
+          utcNowMillis = System.currentTimeMillis();
+          DateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+          Calendar calendar = Calendar.getInstance();
+          calendar.setTimeInMillis(utcNowMillis);
+          String Date=formatter.format(calendar.getTime());
+          long minute = (utcNowMillis / (1000 * 60)) % 60;
+          long hour = (utcNowMillis / (1000 * 60 * 60)) % 24;
+
+          String time = String.format("%02d:%02d", hour, minute);
+
+
+
+  }
+
+  //
+
+  App to monitor the Trades of Poloniex for Cryptocurrencies.
+  PoloniexLive is an app to keep track of the cryptocurrencies trends listed in Poloniex.
+  Get customized price alerts using Push Notifications. Schedule price alerts with just a single touch. Live newsfeed from CoinDesk. Conversion of Cryptocurrencies to Dollar and BTC. Dynamically updated and Interactive CandleStick Charts.
+
+   <b>Features:</b>
+  ● Completely Free.
+  ● No advertisement.
+  ● Cryptocurrency price alerts do not consume any traffic or battery at all.
+  ● Any number of alerts.

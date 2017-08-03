@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="polosoft.sourav.poloniex.poloniexlive">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher55"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher55"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="polosoft.sourav.poloniex.poloniexlive.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       <activity
+            android:name="polosoft.sourav.poloniex.poloniexlive.News.New_main"
+            android:label="News"
+            android:parentActivityName="polosoft.sourav.poloniex.poloniexlive.Detailed.DetailedMain"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="polosoft.sourav.poloniex.poloniexlive.News.News_Detail"
+            android:label="News"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="polosoft.sourav.poloniex.poloniexlive.Detailed.DetailedMain"
+            android:parentActivityName="polosoft.sourav.poloniex.poloniexlive.Detailed.DetailedMain"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="polosoft.sourav.poloniex.poloniexlive.Detailed.DTab0_Calc"
+            android:parentActivityName="polosoft.sourav.poloniex.poloniexlive.Detailed.DetailedMain"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="polosoft.sourav.poloniex.poloniexlive.Detailed.DetailedMain" />
+        </activity>
+        <activity android:name="polosoft.sourav.poloniex.poloniexlive.Prefered_Coin.Prefered_Coin_List" />
+        <activity
+            android:name="polosoft.sourav.poloniex.poloniexlive.Communicate.Abouts"
+            android:label="About" />
+        <activity
+            android:name="polosoft.sourav.poloniex.poloniexlive.Communicate.donate"
+            android:label="Donate" />
+
+        <activity
+            android:name="polosoft.sourav.poloniex.poloniexlive.Alert.Alert_main"
+            android:label="Alerts"
+            android:parentActivityName="polosoft.sourav.poloniex.poloniexlive.Detailed.DetailedMain"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="polosoft.sourav.poloniex.poloniexlive.Alert.Alert_main_Editor"
+            android:label="Create Alert"/>
+
+        <service
+            android:name="polosoft.sourav.poloniex.poloniexlive.Alert.Utils_JobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>

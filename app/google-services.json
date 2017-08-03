@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "262652869580",
+    "firebase_url": "https://poloniexlive-7217b.firebaseio.com",
+    "project_id": "poloniexlive-7217b",
+    "storage_bucket": "poloniexlive-7217b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262652869580:android:2f59817b00d0c929",
+        "android_client_info": {
+          "package_name": "polosoft.sourav.poloniex.poloniexlive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262652869580-nqj3a58j1s6ugghnlo8cjbtf9v9j8is0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "polosoft.sourav.poloniex.poloniexlive",
+            "certificate_hash": "7dcbeda0ce8bc6464881021aaba87c280c13d294"
+          }
+        },
+        {
+          "client_id": "262652869580-lpvl49dtv73ekuegqrubh3padf87ulpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlFLe-LmZMI0K5NwehOZHJN2JbYv6cSjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262652869580-lpvl49dtv73ekuegqrubh3padf87ulpp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

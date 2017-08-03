@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabCalc"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="70dp"
+
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="31dp"
+            app:elevation="5dp"
+            app:fabSize="normal"
+            app:rippleColor="@color/colorPrimary"
+            app:srcCompat="@drawable/d_calc">
+
+        </android.support.design.widget.FloatingActionButton>
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dt0USDPrice"
+        android:layout_width="102dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dt0PercentChange"
+        app:layout_constraintLeft_toRightOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/dt0BTCPrice"
+        tools:text="0.0296260" />
+
+    <TextView
+        android:id="@+id/dt0BTCPrice"
+        android:layout_width="148dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:text="Updating.."
+        android:textSize="19sp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/dt0Line"
+        tools:text="98.23652418" />
+
+    <TextView
+        android:id="@+id/dt0PercentChange"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="24dp"
+        android:text="0.000"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dt0Line"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dt0CoinName"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <TableRow
+        android:id="@+id/dt0Line"
+        android:layout_width="4dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dt0CoinName" />
+
+    <ImageView
+        android:id="@+id/dt0PerChangeImage"
+        android:layout_width="58dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dt0PercentChange"
+        app:layout_constraintRight_toLeftOf="@+id/dt0PercentChange"
+        app:layout_constraintTop_toTopOf="@+id/dt0PercentChange"
+        app:layout_constraintVertical_bias="0.482"
+        app:srcCompat="@drawable/aadown0_24dp" />
+
+    <TextView
+        android:id="@+id/dt0CoinName"
+        android:layout_width="146dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Coin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Black Coin" />
+
+    <TextView
+        android:id="@+id/textt"
+        android:layout_width="35dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="Bid : "
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dt0USDPrice" />
+
+    <TextView
+        android:id="@+id/dt0Bid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+
+        android:text="Updating.."
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/textt"
+        app:layout_constraintTop_toBottomOf="@+id/dt0USDPrice"
+        tools:text="108.12365287" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="1dp"
+        android:text="Ask :"
+        android:textSize="16sp"
+        app:layout_constraintRight_toLeftOf="@+id/dt0Ask"
+        app:layout_constraintTop_toTopOf="@+id/dt0Ask" />
+
+    <TextView
+        android:id="@+id/dt0Ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Updating.."
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dt0Bid"
+        tools:text="236.12478529" />
+
+    <TextView
+        android:id="@+id/dt0price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:text="24hr Price"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textt" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:text="High :"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dt0price" />
+
+    <TextView
+        android:id="@+id/dt0PriceHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Updating.."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintLeft_toRightOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Low :"
+        android:textSize="16sp"
+        app:layout_constraintRight_toLeftOf="@+id/dt0PriceLow"
+        app:layout_constraintTop_toTopOf="@+id/dt0PriceHigh" />
+
+    <TextView
+        android:id="@+id/dt0PriceLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Updating.."
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="103dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="24hr Volume"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/dt0Volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Updating.."
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="Poloniex Time"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dt0Volume" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Local Time"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/ht0PoloniexTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Updating.."
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/ht0LocalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updating.."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintLeft_toLeftOf="@+id/ht0PoloniexTime" />
+
+    <ImageView
+        android:id="@+id/dt0ImageIcon"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toLeftOf="@+id/dt0CoinName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dt0Line"
+        app:layout_constraintLeft_toRightOf="@+id/dt0Line"
+        app:srcCompat="@drawable/dollar_usd" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="4dp"
+        android:alpha="0.75"
+        app:layout_constraintLeft_toRightOf="@+id/dt0Line"
+        app:layout_constraintTop_toTopOf="@+id/dt0Line"
+        app:srcCompat="@drawable/bitcoinlogo" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="Swipe Tabs to Update"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+
+</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

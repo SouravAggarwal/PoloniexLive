@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/converter"
+            android:icon="@drawable/d_drawable_calc"
+            android:title="Converter" />
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/d_navig_news"
+            android:title="News" />
+        <item
+            android:id="@+id/alerts"
+            android:icon="@drawable/d_navig_alerts"
+            android:title="Alerts" />
+        <item
+            android:id="@+id/preferred"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Preferred Coin" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="About" />
+            <item
+                android:id="@+id/donate"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Donate" />
+        </menu>
+    </item>
+
+</menu>
